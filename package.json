@@ -1,0 +1,51 @@
+{
+  "name": "ui-kit",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/dragonekui.umd.ts",
+  "module": "./dist/dragonekui.es.ts",
+  "types": "./dist/components/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "vue": ">=3"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.7",
+    "@storybook/addon-interactions": "^7.6.7",
+    "@storybook/addon-links": "^7.6.7",
+    "@storybook/blocks": "^7.6.7",
+    "@storybook/test": "^7.6.7",
+    "@storybook/vue3": "^7.6.7",
+    "@storybook/vue3-vite": "^7.6.7",
+    "@types/node": "^20.10.8",
+    "@vitejs/plugin-vue": "^4.5.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.6.7",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vite-plugin-dts": "^3.7.0",
+    "vue": "^3.3.11",
+    "vue-tsc": "^1.8.25"
+  },
+  "peerDependencies": {
+    "vue": ">=3"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/dragonekui.es.ts",
+      "require": "./dist/dragonekui.umd.ts"
+    },
+    "./styles": "./dist/style.css"
+  }
+}
