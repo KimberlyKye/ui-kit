@@ -1,2 +1,2 @@
-import HelloWorld from './HelloWorld.vue';
-export { HelloWorld };
+declare const MyComponentWC: void;
+export default MyComponentWC;
