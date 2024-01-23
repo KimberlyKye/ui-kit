@@ -20,7 +20,7 @@ export default defineConfig({
     },
   },
   plugins: [
-    vue(),
+    vue({ customElement: true }),
     dts({
       insertTypesEntry: true,
     }),
