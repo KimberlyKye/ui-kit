@@ -7,8 +7,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/components/index.ts'),
-      name: 'dragonekui',
-      fileName: (format) => `dragonekui.${format}.ts`,
+      name: 'graphmelui',
+      fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
       external: ['vue'],

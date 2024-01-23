@@ -1,5 +1,5 @@
-import { defineCustomElement as t } from "vue";
-const e = {
+import { defineCustomElement as e } from "vue";
+const n = {
   template: `<div>
       <h1>{{ title }}</h1>
       <p>{{ description }}</p>
@@ -9,10 +9,11 @@ const e = {
     title: String,
     description: String
   }
-}, o = customElements.define(
-  "my-component",
-  t(e)
-);
+}, o = e(n);
+function p(t = "my-component") {
+  customElements.define(t, o);
+}
 export {
-  o as default
+  o as MyComponentWC,
+  p as register
 };

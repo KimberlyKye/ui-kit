@@ -12,9 +12,8 @@ const MyComponent = {
   },
 };
 
-const MyComponentWC = customElements.define(
-  'my-component',
-  defineCustomElement(MyComponent)
-);
+export const MyComponentWC = defineCustomElement(MyComponent);
 
-export default MyComponentWC;
+export function register(tagName = 'my-component') {
+  customElements.define(tagName, MyComponentWC);
+}
