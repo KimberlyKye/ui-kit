@@ -4,6 +4,7 @@ const MyComponent = {
   template: `<div>
       <h1>{{ title }}</h1>
       <p>{{ description }}</p>
+      <p>test vue component</p>
     </div>`,
   props: {
     title: String,
